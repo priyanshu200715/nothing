@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+    <link rel="stylesheet" href="snow.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(image/back.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .h-text {
+            text-align: center;
+            padding-top: 20%;
+        }
+
+        h1 {
+            color: orange;
+            font-size: 2em;
+        }
+
+        span {
+            color: rgb(250, 72, 191);
+        }
+
+        p {
+            color: rgb(255, 49, 49);
+            padding-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 1.2em;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .h-text {
+                padding-top: 15%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .h-text {
+                padding-top: 10%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            a {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .h-text {
+                padding-top: 5%;
+            }
+
+            h1 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+
+            a {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="snowflakes-container">
+        <!-- Snowflakes will be generated here -->
+    </div>
+    <div class="h-text">
+        <h1>Hellow <span>babe</span></h1>
+        <p>I made something for you.. just click the button </p>
+        <a href="text.html">click me</a>
+    </div>
+
+    <script src="snow.js"></script>
+</body>
+</html>
